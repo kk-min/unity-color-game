@@ -129,50 +129,74 @@ public class MovableObs : MonoBehaviour
 	{
         if (other.gameObject.tag == "Player")
 		{
-			if (isForward)
+			if (horizontal)
+			{
+				if (isForward)
+				{
+					if (reverse)
+					{
+						if (transform.position.x > startPos.x - distance)
 						{
-							if (reverse)
-							{
-								if (transform.position.x > startPos.x - distance)
-								{
-									other.gameObject.transform.position += horizontalVector * Time.deltaTime * speed;
-								}
-								else
-								{
-									isForward = false;
-								}
-							}
-							else
-							{
-								if (transform.position.x < startPos.x + distance)
-								{
-									other.gameObject.transform.position += horizontalVector * Time.deltaTime * speed;
-								}
-								else
-									isForward = false;
-								}
+							other.gameObject.transform.position += horizontalVector * Time.deltaTime * speed;
 						}
 						else
 						{
-							if (reverse)
-							{
-								if (transform.position.x < startPos.x)
-								{
-									other.gameObject.transform.position -= horizontalVector * Time.deltaTime * speed;
-								}
-								else
-									isForward = true;
-							}
-							else
-							{
-								if (transform.position.x > startPos.x)
-								{
-									other.gameObject.transform.position -= horizontalVector * Time.deltaTime * speed;
-								}
-								else
-									isForward = true;
-							}
+							isForward = false;
 						}
+					}
+					else
+					{
+						if (transform.position.x < startPos.x + distance)
+						{
+							other.gameObject.transform.position += horizontalVector * Time.deltaTime * speed;
+						}
+						else
+							isForward = false;
+						}
+				}
+				else
+				{
+					if (reverse)
+					{
+						if (transform.position.x < startPos.x)
+						{
+							other.gameObject.transform.position -= horizontalVector * Time.deltaTime * speed;
+						}
+						else
+							isForward = true;
+					}
+					else
+					{
+						if (transform.position.x > startPos.x)
+						{
+							other.gameObject.transform.position -= horizontalVector * Time.deltaTime * speed;
+						}
+						else
+							isForward = true;
+					}
+				}
+			}
+			else
+			{
+				if (isForward)
+				{
+					if (transform.position.z < startPos.z + distance)
+					{
+						other.gameObject.transform.position += verticalVector * Time.deltaTime * speed;
+					}
+					else
+						isForward = false;
+				}
+				else
+				{
+					if (transform.position.z > startPos.z)
+					{
+						other.gameObject.transform.position -= verticalVector * Time.deltaTime * speed;
+					}
+					else
+						isForward = true;
+				}
+			}
 		}
 	}
 }

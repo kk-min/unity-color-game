@@ -12,7 +12,7 @@ public class CharacterControls : MonoBehaviour {
 	public float airVelocity = 8f;
 	public float gravity = 10.0f;
 	public float maxVelocityChange = 10.0f;
-	public float jumpHeight = 2.0f;
+	public float jumpHeight = 16.0f;
 	public float maxFallSpeed = 20.0f;
 	public float rotateSpeed = 25f; //Speed the player rotate
 	private Vector3 moveDir;
