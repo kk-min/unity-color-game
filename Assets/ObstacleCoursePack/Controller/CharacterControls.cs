@@ -17,7 +17,7 @@ public class CharacterControls : MonoBehaviour {
 	public float rotateSpeed = 25f; //Speed the player rotate
 	private Vector3 moveDir;
 	public GameObject cam;
-	private Rigidbody rb;
+	public Rigidbody rb;
 
 	private float distToGround;
 
