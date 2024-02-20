@@ -52,18 +52,10 @@ public class CharacterControls : MonoBehaviour {
 		if (gameObject.layer == LayerMask.NameToLayer("Blue") )
 		{
 			NewLayer = LayerMask.NameToLayer("Red");
-			foreach(Renderer renderer in GetComponentsInChildren<Renderer>())
-			{
-				renderer.material.SetColor("_Color", Color.red);
-			}
 		}
 		else
 		{
 			NewLayer = LayerMask.NameToLayer("Blue");
-			foreach(Renderer renderer in GetComponentsInChildren<Renderer>())
-			{
-				renderer.material.SetColor("_Color", Color.blue);
-			}
 		}
 
 		gameObject.layer = NewLayer;
