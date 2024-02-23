@@ -18,32 +18,31 @@ public class ColorChange : MonoBehaviour
             case ("Red"):
                 foreach(Renderer renderer in GetComponentsInChildren<Renderer>())
                 {
-                    renderer.material.SetColor("_Color", new Color(1f, 0.059f, 0.09f));
-;
+                    renderer.material.SetColor("_BaseColor", Color.red);
                 }
                 break;
             case ("Blue"):
                 foreach(Renderer renderer in GetComponentsInChildren<Renderer>())
                 {
-                    renderer.material.SetColor("_Color", new Color(0.184f, 0.192f, 0.78f));
+                    renderer.material.SetColor("_BaseColor", Color.blue);
                 }
                 break;
             case ("Green"):
                 foreach(Renderer renderer in GetComponentsInChildren<Renderer>())
                 {
-                    renderer.material.SetColor("_Color", new Color(0.176f, 0.878f, 0.396f));
+                    renderer.material.SetColor("_BaseColor", Color.green);
                 }
                 break;
             case ("Yellow"):
                 foreach(Renderer renderer in GetComponentsInChildren<Renderer>())
                 {
-                    renderer.material.SetColor("_Color", new Color(0.969f, 0.969f, 0.506f));
+                    renderer.material.SetColor("_BaseColor", Color.yellow);
                 }
                 break;
             case ("White"):
                 foreach(Renderer renderer in GetComponentsInChildren<Renderer>())
                 {
-                    renderer.material.SetColor("_Color", Color.white);
+                    renderer.material.SetColor("_BaseColor", Color.white);
                 }
                 break;
         }

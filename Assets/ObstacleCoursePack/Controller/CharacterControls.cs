@@ -12,12 +12,12 @@ public class CharacterControls : MonoBehaviour {
 	public float airVelocity = 8f;
 	public float gravity = 10.0f;
 	public float maxVelocityChange = 10.0f;
-	public float jumpHeight = 16.0f;
+	public float jumpHeight = 2.0f;
 	public float maxFallSpeed = 20.0f;
 	public float rotateSpeed = 25f; //Speed the player rotate
 	private Vector3 moveDir;
 	public GameObject cam;
-	public Rigidbody rb;
+	private Rigidbody rb;
 
 	private float distToGround;
 
@@ -52,10 +52,18 @@ public class CharacterControls : MonoBehaviour {
 		if (gameObject.layer == LayerMask.NameToLayer("Blue") )
 		{
 			NewLayer = LayerMask.NameToLayer("Red");
+			foreach(Renderer renderer in GetComponentsInChildren<Renderer>())
+			{
+				renderer.material.SetColor("_Color", Color.red);
+			}
 		}
 		else
 		{
 			NewLayer = LayerMask.NameToLayer("Blue");
+			foreach(Renderer renderer in GetComponentsInChildren<Renderer>())
+			{
+				renderer.material.SetColor("_Color", Color.blue);
+			}
 		}
 
 		gameObject.layer = NewLayer;

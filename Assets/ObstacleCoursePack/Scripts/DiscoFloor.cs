@@ -36,7 +36,7 @@ public class DiscoFloor : MonoBehaviour
         currentTime += Time.deltaTime;
         if (currentTime > period)
         {
-            Debug.Log("Color change in progress");
+            //Debug.Log("Color change in progress");
             this.index = (index + 1) % 8;
             int newLayer = LayerMask.NameToLayer(this.colors[index]);
             gameObject.layer = newLayer;
