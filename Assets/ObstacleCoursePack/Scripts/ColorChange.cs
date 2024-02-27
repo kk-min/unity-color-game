@@ -46,6 +46,12 @@ public class ColorChange : MonoBehaviour
                     renderer.material.SetColor("_Color", Color.white);
                 }
                 break;
+            case ("Black"):
+                foreach (Renderer renderer in GetComponentsInChildren<Renderer>())
+                {
+                    renderer.material.SetColor("_Color", Color.black);
+                }
+                break;
         }
     }
 }
