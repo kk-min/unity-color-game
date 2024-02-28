@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - Ladder
   - Ball
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Green
   - Yellow
   - Black
-  - 
+  - Interactables
   - 
   - 
   - 
