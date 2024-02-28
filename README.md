@@ -35,12 +35,12 @@ This game is developed for VR platform using <b>Unity Version 2022.3.4f</b>
 
 
 ## <b>Gameplay Preview (XR Device Simulator)</b><br>
-<img src="https://github.com/kk-min/unity-color-game/assets/92379986/61993c41-4e23-4bb8-b7d6-5c4f3dace962" width="500"/>
-<img src="https://github.com/kk-min/unity-color-game/assets/92379986/5da784ef-bbfe-4ee1-8451-eff5b8346622" width="500"/>
+<img src="https://github.com/kk-min/unity-color-game/assets/92379986/61993c41-4e23-4bb8-b7d6-5c4f3dace962" width="400"/>
+<img src="https://github.com/kk-min/unity-color-game/assets/92379986/5da784ef-bbfe-4ee1-8451-eff5b8346622" width="400"/>
 
 ------
-<img src="https://github.com/kk-min/unity-color-game/assets/92379986/d68fe5a4-c3f3-482b-bea1-dfd76cf6c575" width="500"/>
-<img src="https://github.com/kk-min/unity-color-game/assets/92379986/00521427-e028-4780-8b63-2416133776c9" width="500"/>
+<img src="https://github.com/kk-min/unity-color-game/assets/92379986/d68fe5a4-c3f3-482b-bea1-dfd76cf6c575" width="400"/>
+<img src="https://github.com/kk-min/unity-color-game/assets/92379986/00521427-e028-4780-8b63-2416133776c9" width="400"/>
 
 ---------
 
