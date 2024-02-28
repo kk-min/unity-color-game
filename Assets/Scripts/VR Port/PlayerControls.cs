@@ -14,6 +14,8 @@ public class PlayerControls : MonoBehaviour
 
     private CustomInput input = null;
 
+    private AudioSource jumpSound;
+
     private Vector3 movement;
     private Vector3 pushDir;
     private Vector3 moveDir;
@@ -44,6 +46,7 @@ public class PlayerControls : MonoBehaviour
     void Start()
     {
         distToGround = GetComponent<Collider>().bounds.extents.y;
+        jumpSound = GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -77,6 +80,7 @@ public class PlayerControls : MonoBehaviour
     // Jumping Code
     private void Jump()
     {
+        jumpSound.Play();
         movement.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
     }
     //Make sure player is on the ground when jumping to prevent buggy jump
