@@ -48,7 +48,7 @@ This game is developed for VR platform using <b>Unity Version 2022.3.4f</b>
 
 <b>Developed by:</b>
 <br>
-[Min](https://github.com/mink0003)<br>
+[Min](https://github.com/kk-min)<br>
 [Chae Yoon](https://github.com/kathy060415)<br>
 [Subeen](https://github.com/subeen832715)<br>
 [Runyu](https://github.com/runyu1413)<br>
