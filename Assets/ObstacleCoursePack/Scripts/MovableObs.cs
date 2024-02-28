@@ -108,4 +108,95 @@ public class MovableObs : MonoBehaviour
 			}
 		}
     }
+
+	private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.transform.parent = this.transform;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.transform.parent = null;
+        }
+    }
+
+	private void OnCollisionStay(Collision other)
+	{
+        if (other.gameObject.tag == "Player")
+		{
+			if (horizontal)
+			{
+				if (isForward)
+				{
+					if (reverse)
+					{
+						if (transform.position.x > startPos.x - distance)
+						{
+							other.gameObject.transform.position += horizontalVector * Time.deltaTime * speed;
+						}
+						else
+						{
+							isForward = false;
+						}
+					}
+					else
+					{
+						if (transform.position.x < startPos.x + distance)
+						{
+							other.gameObject.transform.position += horizontalVector * Time.deltaTime * speed;
+						}
+						else
+							isForward = false;
+						}
+				}
+				else
+				{
+					if (reverse)
+					{
+						if (transform.position.x < startPos.x)
+						{
+							other.gameObject.transform.position -= horizontalVector * Time.deltaTime * speed;
+						}
+						else
+							isForward = true;
+					}
+					else
+					{
+						if (transform.position.x > startPos.x)
+						{
+							other.gameObject.transform.position -= horizontalVector * Time.deltaTime * speed;
+						}
+						else
+							isForward = true;
+					}
+				}
+			}
+			else
+			{
+				if (isForward)
+				{
+					if (transform.position.z < startPos.z + distance)
+					{
+						other.gameObject.transform.position += verticalVector * Time.deltaTime * speed;
+					}
+					else
+						isForward = false;
+				}
+				else
+				{
+					if (transform.position.z > startPos.z)
+					{
+						other.gameObject.transform.position -= verticalVector * Time.deltaTime * speed;
+					}
+					else
+						isForward = true;
+				}
+			}
+		}
+	}
 }

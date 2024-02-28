@@ -523,8 +523,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5134949450074183553}
   - component: {fileID: 1789596744975732356}
-  - component: {fileID: 1815345336306356294}
-  m_Layer: 6
+  - component: {fileID: 8435461592348935886}
+  m_Layer: 0
   m_Name: hands:Lhand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -624,7 +624,7 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.00654291, y: -0.036744133, z: -0.06238377}
     m_Extent: {x: 0.072534904, y: 0.09257294, z: 0.105605766}
   m_DirtyAABB: 0
---- !u!114 &1815345336306356294
+--- !u!114 &8435461592348935886
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -741,8 +741,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6503472651252357510}
-  - component: {fileID: 3995337752304276855}
-  - component: {fileID: 979772968376367294}
+  - component: {fileID: -4728607348658864628}
+  - component: {fileID: 4456396396198054922}
   m_Layer: 0
   m_Name: LeftHandPrefab
   m_TagString: Untagged
@@ -767,7 +767,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!95 &3995337752304276855
+--- !u!95 &-4728607348658864628
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -777,7 +777,7 @@ Animator:
   m_GameObject: {fileID: 5839806730945233724}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c1ca740784d1912428fb87463f397736, type: 2}
+  m_Controller: {fileID: 9100000, guid: 55bbc821565317a44b5d260afb32ac5d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -788,7 +788,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &979772968376367294
+--- !u!114 &4456396396198054922
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -797,12 +797,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5839806730945233724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f62ce21f1d5bb9f4d9b5bf110d61b9a8, type: 3}
+  m_Script: {fileID: 11500000, guid: 54f9e8628803f6f47bd528f3e3cccb93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gripReference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   triggerReference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  handAnimator: {fileID: 3995337752304276855}
+  handAnimator: {fileID: -4728607348658864628}
 --- !u!1 &6048351462085208520
 GameObject:
   m_ObjectHideFlags: 0

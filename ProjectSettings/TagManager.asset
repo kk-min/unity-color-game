@@ -7,6 +7,8 @@ TagManager:
   - Wall
   - Slide
   - Obstacle
+  - Ladder
+  - Ball
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - White
   - Green
   - Yellow
-  - 
+  - Black
   - 
   - 
   - 

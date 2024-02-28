@@ -18,3 +18,4 @@ public class HandAnimation : MonoBehaviour
         handAnimator.SetFloat("Trigger", triggerValue);
     }
 }
+

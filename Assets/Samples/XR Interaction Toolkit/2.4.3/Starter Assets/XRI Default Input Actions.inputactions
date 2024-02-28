@@ -703,9 +703,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Swap Color",
+                    "name": "X Button",
                     "type": "Button",
-                    "id": "67981eaf-c210-4530-a2bf-a2f56316773d",
+                    "id": "b0bbcf9c-b5c7-4b85-866a-66226d5d3615",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Y Button",
+                    "type": "Button",
+                    "id": "cd0400fd-a378-4a43-b5a6-0c5df245e269",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -858,12 +867,23 @@
                 },
                 {
                     "name": "",
-                    "id": "5f1ac84d-7121-4cdd-920a-d31d797be587",
+                    "id": "14e69cea-3565-481a-8971-572b980f7aae",
                     "path": "<XRController>{LeftHand}/{PrimaryButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Swap Color",
+                    "action": "X Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb82db87-1cfe-44f0-a1a5-220876a38db1",
+                    "path": "<XRController>{LeftHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Y Button",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1439,9 +1459,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Jump",
+                    "name": "A Button",
                     "type": "Button",
-                    "id": "df83e34e-fc76-44c5-8c51-27c4431a0a8b",
+                    "id": "d61909a8-9a39-4c11-a1db-2f944c675f71",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "B Button",
+                    "type": "Button",
+                    "id": "0c9c8a42-6814-49a3-9bf3-166f127bb24f",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -1594,12 +1623,23 @@
                 },
                 {
                     "name": "",
-                    "id": "8e094ed5-21dd-44a4-856c-c067a9e2210a",
-                    "path": "<XRController>{RightHand}/primaryButton",
+                    "id": "e764cfd2-ff4b-40c2-965d-9fd48f2b0906",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "Jump",
+                    "groups": "",
+                    "action": "A Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "48ec5fe5-d116-425b-8644-464511395344",
+                    "path": "<XRController>{RightHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B Button",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
