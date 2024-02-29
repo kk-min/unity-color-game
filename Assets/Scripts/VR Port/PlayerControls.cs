@@ -8,7 +8,7 @@ using UnityEngine.Windows;
 public class PlayerControls : MonoBehaviour
 {
     [SerializeField] private CharacterController cc;
-    [SerializeField] private InputActionProperty XButton;
+    [SerializeField] private InputActionProperty BButton;
     [SerializeField] private InputActionProperty AButton;
     [SerializeField] private float jumpHeight = 3f;
 
@@ -59,13 +59,14 @@ public class PlayerControls : MonoBehaviour
             //Debug.Log("loaded"+transform.position);
             loadCheckPoint = false;
         }
-        if (AButton.action.WasPressedThisFrame() && _isGrounded)
+        //if (AButton.action.WasPressedThisFrame() && _isGrounded)
+        if (AButton.action.WasPressedThisFrame())
         {
             //Debug.Log("jumping");
             Jump();
         }
         //Debug.Log(_isGrounded);
-        if (XButton.action.WasPressedThisFrame())
+        if (BButton.action.WasPressedThisFrame())
         {
             //Debug.Log("swapping");
             Swap();

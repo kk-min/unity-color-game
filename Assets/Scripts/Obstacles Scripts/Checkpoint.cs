@@ -21,7 +21,7 @@ public class Checkpoint : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<PlayerControls>().checkPoint = transform.position + new Vector3(0, 3, 0);
-            Debug.Log("saved checkpoint 1");
+            Debug.Log("saved checkpoint 1"+transform.position);
         }
     }
 }
