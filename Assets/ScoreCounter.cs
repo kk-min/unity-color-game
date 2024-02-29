@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScoreCounter : MonoBehaviour
 {
     // Start is called before the first frame update
-    int score;
+    public int score;
     void Start()
     {
         this.score = 0;
