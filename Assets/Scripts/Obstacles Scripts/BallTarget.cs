@@ -22,6 +22,7 @@ public class BallTarget : MonoBehaviour
         {
             balloonPopSound.Play();
             Destroy(gameObject,0.2f);
+            transform.parent.GetComponent<ScoreCounter>().score += 1;
         }
     }
 }
