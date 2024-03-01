@@ -1,9 +1,14 @@
 # Unity Color Game: #C01012
 
+> [!CAUTION]
+> Please make sure that you have an activity space clear of any objects in your surroundings and keep a clear buffer around your activity space
+> 
 ### Virtual Reality Game Development Project <br>
-=================================<br>
-<b>|| ~~~~ Copyright © 2024 CZ4001 Team 7~~~~||</b><br>
-=================================<br>
+> [!IMPORTANT]  
+> <b>Copyright © 2024 CZ4001 Team 7</b><br>
+
+> 
+
 
 [![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg?style=for-the-badge)](http://www.wtfpl.net/about/)<t>
 [![Made with Unity](https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=for-the-badge&logo=unity)](https://unity3d.com)
